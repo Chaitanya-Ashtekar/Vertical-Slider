@@ -1,0 +1,135 @@
+body {
+  font-family: "Ubuntu" ,sans-serif;
+}
+
+.container{
+  max-width: 85.375rem;
+  margin: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.customer-review{
+  width: 100%;
+  /* height: 100vh; */
+  height: 28.125rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.title{
+  text-align: center;
+  margin: 1.5rem auto 2.5rem;
+  position: relative;
+  line-height: 4rem;
+}
+
+.title::after{
+  content: "";
+  background: linear-gradient(to right,#3BA963, #6dbf8b, #3BA963);
+  width: 5rem;
+  height: 0.35rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.review-box{
+  width: 90%;
+  max-width: 700px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: -10px 10px 40px rgba(0,0,0,0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+#slide{
+  width: 100%;
+  padding-right: 50px;
+  box-sizing: border-box;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.card{
+  height: 300px;
+  padding: 40px;
+  color: #777;
+  line-height: 22px;
+  box-sizing:border-box;
+  background: #fff;
+  position: relative;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  z-index: 1;
+}
+
+.card::before{
+  content: "";
+  width: 110px;
+  height: 110px;
+  border-bottom-right-radius: 100%;
+  background: #3BA963;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.customer-profile{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.customer-profile img{
+  width: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.customer-profile h3{
+  color: #3BA963;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.customer-profile p{
+  font-size: 1rem;
+}
+
+.sidebar{
+  width: 50px;
+  height: 300px;
+  background: #3BA963;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.sidebar img{
+  width: 45px;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#upArrow,
+#downArrow{
+  margin: 10px 0;
+}

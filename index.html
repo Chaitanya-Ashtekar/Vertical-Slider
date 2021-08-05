@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Vertical Slider</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<!-- Montserrat -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap" rel="stylesheet">
+<!-- Ubuntu -->
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+<!-- Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- _____________________ Testimonials _____________________ -->
+
+  <div class="testimonial">
+    <div class="container">
+      <div class="customer-review">
+        <h2 class="title">Customer Reviews</h2>
+
+        <div class="review-box">
+          <div id="slide" class="">
+            <div class="card">
+              <div class="customer-profile">
+                <img src="images/user-3.png" alt="">
+                <div class="">
+                  <h3>Emma Abram.</h3>
+                  <p>(SDE, Amazon)</p>
+                </div>
+              </div>
+              <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is
+                thought to have scrambled parts of Cicero's De
+                Finibus Bonorum et Malorum for use in a type specimen book.</p>
+            </div>
+
+            <div class="card">
+              <div class="customer-profile">
+                <img src="images/pic2.jpg" alt="">
+                <div class="">
+                  <h3>Emma Abram.</h3>
+                  <p>(SDE, Google)</p>
+                </div>
+              </div>
+              <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is
+                thought to have scrambled parts of Cicero's De
+                Finibus Bonorum et Malorum for use in a type specimen book.</p>
+            </div>
+
+            <div class="card">
+              <div class="customer-profile">
+                <img src="images/pic3.jpg" alt="">
+                <div class="">
+                  <h3>Emma Abram.</h3>
+                  <p>(HR, Cisco)</p>
+                </div>
+              </div>
+              <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is
+                thought to have scrambled parts of Cicero's De
+                Finibus Bonorum et Malorum for use in a type specimen book.</p>
+            </div>
+
+            <div class="card">
+              <div class="customer-profile">
+                <img src="images/pic4.jpg" alt="">
+                <div class="">
+                  <h3>Emma Abram.</h3>
+                  <p>(Senior Manager, Wipro)</p>
+                </div>
+              </div>
+              <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is
+                thought to have scrambled parts of Cicero's De
+                Finibus Bonorum et Malorum for use in a type specimen book.</p>
+            </div>
+
+            <div class="card">
+              <div class="customer-profile">
+                <img src="images/user-1.png" alt="">
+                <div class="">
+                  <h3>Emma Abram.</h3>
+                  <p>(Software Engineer, Adobe)</p>
+                </div>
+              </div>
+              <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is
+                thought to have scrambled parts of Cicero's De
+                Finibus Bonorum et Malorum for use in a type specimen book.</p>
+            </div>
+            <div class="card">
+              <div class="customer-profile">
+                <img src="images/user-2.png" alt="">
+                <div class="">
+                  <h3>Emma Abram.</h3>
+                  <p>(Nabeel Nawab, YouTuber)</p>
+                </div>
+              </div>
+              <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is
+                thought to have scrambled parts of Cicero's De
+                Finibus Bonorum et Malorum for use in a type specimen book.</p>
+            </div>
+            <div class="card">
+              <div class="customer-profile">
+                <img src="images/pic1.jpg" alt="">
+                <div class="">
+                  <h3>Emma Abram.</h3>
+                  <p>(Senior SD, OYO)</p>
+                </div>
+              </div>
+              <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is
+                thought to have scrambled parts of Cicero's De
+                Finibus Bonorum et Malorum for use in a type specimen book.</p>
+            </div>
+
+          </div>
+          <div class="sidebar">
+            <img id="upArrow" src="images/slider-up-button.png" alt="">
+            <img id="downArrow" src="images/slider-down-button.png" alt="">
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+  <!-- _____________________ Js for testimonial slider _____________________ -->
+  <script type="text/javascript">
+    var slide = document.getElementById("slide");
+    var upArrow = document.getElementById("upArrow");
+    var downArrow = document.getElementById("downArrow");
+    let x = 0;
+
+    upArrow.onclick = function(){
+      if(x > "-1800"){
+        x = x - 300;
+        slide.style.top = x + "px";
+      }
+
+    }
+
+    downArrow.onclick = function(){
+      if(x < "0"){
+        x = x + 300;
+        slide.style.top = x + "px";
+      }
+
+    }
+
+
+  </script>
+
+
+</body>
+
+</html>
